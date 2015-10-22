@@ -23,10 +23,10 @@ var logicComparison = (function(){
   }
 })()
 
-$("#logcomp_submit").on("click", function() {
+$(".logcomp_submit").on("click", function() {
   event.preventDefault();
-  var prep1 = $("#logcomp_firstinput").val();
-  var prep2 = $("#logcomp_secondinput").val();
+  var prep1 = $(".logcomp_firstinput").val();
+  var prep2 = $(".logcomp_secondinput").val();
   var result = logicComparison.calc(prep1, prep2);
-  $("#logcomp_result").text(result);
+  $(".logcomp_result").text(result);
 });
