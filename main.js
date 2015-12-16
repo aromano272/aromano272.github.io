@@ -149,7 +149,7 @@ var mostrarPergunta = function(data) {
 }
 
 var escolherResposta = function(resposta) {
-  if(resposta.innerHTML == respostaCorrecta) {
+  if($(resposta).text() == respostaCorrecta) {
     $(resposta).addClass("btn-success").removeClass("btn-default");
   } else {
     $(resposta).addClass("btn-danger").removeClass("btn-default");
@@ -168,3 +168,22 @@ $(".wrapper").on("click", ".resposta", function() {
 });
 
 mostrarPergunta(data);
+/*
+var teste = [];
+for(var i = 0; i < 39; i++) {
+  var init = true;
+
+  teste[i] = 0;
+
+  if(i == 38) init = false;
+  if(init == false) {
+    for(var j = 0; j < 100000; j++) {
+      teste[rng(data)]++;
+    }
+  }
+}
+
+for(var i = 0; i < teste.length; i++) {
+  console.log("teste[" + i + "]: " + teste[i]);
+}
+*/
