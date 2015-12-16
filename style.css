@@ -1,0 +1,11 @@
+.respostaCerta {
+  background: green;
+}
+
+.respostaErrada {
+  background: red;
+}
+
+.pergunta {
+  padding-bottom: 20px;
+}
