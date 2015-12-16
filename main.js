@@ -87,7 +87,26 @@ var intervalo;
 
 var rng = function(seed) {
   var len = seed.length;
-  return Math.round(Math.random() * len);
+  return Math.floor(Math.random() * len);
+}
+
+var shuffle = function(array) {
+  var currentIndex = array.length, temporaryValue, randomIndex ;
+
+  // While there remain elements to shuffle...
+  while (0 !== currentIndex) {
+
+    // Pick a remaining element...
+    randomIndex = Math.floor(Math.random() * currentIndex);
+    currentIndex -= 1;
+
+    // And swap it with the current element.
+    temporaryValue = array[currentIndex];
+    array[currentIndex] = array[randomIndex];
+    array[randomIndex] = temporaryValue;
+  }
+
+  return array;
 }
 
 var escolherPergunta = function(data) {
@@ -108,9 +127,18 @@ var escolherPergunta = function(data) {
 var gerarPergunta = function(data) {
   var $pergunta = $("<h3 class='pergunta'/>").text(data.pergunta);
   var $corpoPergunta = $("<div class='corpoPergunta container btn-group-vertical'/>").append($pergunta);
-  for(var i = 0; i < data.resposta.length; i++) {
-    var $el = $("<div class='resposta btn btn-default'/>").text(data.resposta[i]);
-    $corpoPergunta.append($el);
+  $resposta = [];
+  for(var j = 0; j < data.resposta.length; j++) {
+    var $el = $("<div class='resposta btn btn-default'/>").text(data.resposta[j]);
+    $resposta.push($el);
+  }
+  shuffle($resposta);
+  for(var y = 0; y < $resposta.length; y++) {
+    if($resposta[y].text() == respostaCorrecta) respostaCorrectaNum = y + 1;
+  }
+
+  for(var i = 0; i < $resposta.length; i++) {
+    $corpoPergunta.append($resposta[i]);
   }
   return $corpoPergunta;
 }
