@@ -3,26 +3,33 @@
 <head>
     <meta charset="UTF-8">
     <title>Andre Romano - Developer</title>
-
-    <link href="libs/bootstrap.min.css"/>
-    <link href="libs/bootstrap-theme.min.css"/>
-    <link href="css/main.css"/>
+    <link href="https://fonts.googleapis.com/css?family=Roboto+Mono" rel="stylesheet">
+    <link rel="stylesheet" type="text/css" href="libs/normalize.css"/>
+    <!-- <link rel="stylesheet" type="text/css" href="libs/bootstrap.min.css"/> -->
+    <!-- <link rel="stylesheet" type="text/css" href="libs/bootstrap-theme.min.css"/> -->
+    <link rel="stylesheet" type="text/css" href="css/main.css"/>
 </head>
 <body>
 
   <section class="section about_section">
-    <nav>
-      <ul>
-        <li><a class="btn nav_btn" href="#">About</a></li>
-        <li><a class="btn nav_btn" href="#">Projects</a></li>
-        <li><a class="btn nav_btn" href="#">Skills</a></li>
-        <li><a class="btn nav_btn" href="#">Contact</a></li>
-      </ul>
-    </nav>
+    <header class="about_header">
 
-    <img class="profile_photo" src="./assets/icons_md/icon_profile_photo.png"/>
+      <img class="profile_photo" src="./assets/icons_md/icon_profile_photo.png"/>
 
-    <h3 class="section_title profile_name">André Romano</h3>
+      <div class="navbar_and_title_container">
+        <nav>
+          <a class="btn nav_btn" href="#">About</a>
+          <a class="btn nav_btn" href="#">Projects</a>
+          <a class="btn nav_btn" href="#">Skills</a>
+          <a class="btn nav_btn" href="#">Contact</a>
+        </nav>
+
+        <h3 class="section_title profile_name">André Romano</h3>
+      </div>
+
+    </header>
+
+
 
     <section class="card about_card">
       <p class="card_description about_card_description">Some random description about me. <br/>lorem ipus som emore random shit about me bla bla bal teste montes de cenas ditas aqui extremamente importantes que toda a gente vai ler do principio ao fim.</p>
@@ -43,7 +50,7 @@
 
       <p class="card_description voicelyn_card_description">App description in this spot<br/> Lorem ipsum bla bla moar lorem moat moat moat ipsum.</p>
 
-      <a class="card_link voicelyn_card_link" href="TODO">Play Store</a>
+      <a class="btn card_link voicelyn_card_link" href="TODO">Play Store</a>
 
     </section>
 
@@ -51,12 +58,12 @@
 
       <h4 class="card_title simpleathlete_card_title">Simple Athlete</h4>
 
-      <img class="card_img simpleathlete_card_img" src="TODO"/>
+      <img class="card_img simpleathlete_card_img" src="./assets/simpleathlete_logos2.png"/>
 
       <p class="card_description simpleathlete_card_description">A Fitness app targeted for intermediate to experienced users that focuses on workout plans management and allows users to daily log their food intake while keeping track of their own set goals.</p>
 
       <!-- tentar link: market://details?id=com.aromano.simpleathlete em mobile e ver se funciona -->
-      <a class="card_link simpleathlete_card_link" href="http://play.google.com/store/apps/details?id=com.aromano.simpleathlete">Play Store</a>
+      <a class="btn card_link simpleathlete_card_link" href="http://play.google.com/store/apps/details?id=com.aromano.simpleathlete">Play Store</a>
 
     </section>
 
@@ -65,7 +72,7 @@
 
   <section class="section skills_section">
 
-    <h3 class="section_title skills_title">Projects</h3>
+    <h3 class="section_title skills_title">Skills</h3>
 
     <section class="card primary_project_card">
 
@@ -209,5 +216,6 @@
 <script src="libs/jquery.min.js"/>
 <script src="libs/bootstrap.min.js"/>
 <script src="js/main.js"/>
+<script src="http://localhost:35729/livereload.js"/>
 </body>
 </html>
