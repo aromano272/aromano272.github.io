@@ -29,7 +29,7 @@ nav {
 }
 
 .btn {
-  font-size: 24px;
+  font-size: 2.5em;
   padding: 5px;
   text-transform: uppercase;
   color: #f9f9f9
@@ -41,7 +41,7 @@ nav {
 
 .section_title {
   text-transform: uppercase;
-  font-size: 40px;
+  font-size: 5em;
   font-weight: normal;
   margin: 0;
 }
@@ -59,7 +59,7 @@ nav {
   text-align: center;
   margin: 5px;
   padding: 0;
-  font-size: 32px;
+  font-size: 3.5em;
   font-weight: normal;
 }
 
@@ -73,7 +73,7 @@ nav {
 .card_description {
   color: #f9f9f9;
   margin: 0;
-  font-size: 18px;
+  font-size: 2.2em;
   line-height: 1.4;
 }
 
@@ -86,8 +86,8 @@ nav {
 
 
 .profile_photo {
-  width: 150px;
-  height: 150px;
+  width: 14em;
+  height: 14em;
 }
 
 .about_section {
@@ -104,9 +104,7 @@ nav {
   background-color: #ff3c00
 }
 
-.about_card_description {
-  font-size: 28px;
-}
+
 
 /******************************************/
 /*               Projects                 */
@@ -149,7 +147,7 @@ nav {
 
 .skill_title {
   align-self: center;
-  font-size: 24px;
+  font-size: 2.5em;
   margin-left: 30px;
   color: #f9f9f9;
 }
