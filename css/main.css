@@ -3,6 +3,7 @@ html, body {
   height: 100%;
   margin: 0;
   padding: 0;
+  box-sizing: border-box;
 }
 
 body {
@@ -16,19 +17,19 @@ ul {
 }
 
 .btn {
-  font-size: 2.5em;
-  padding: 5px;
+  font-size: 1.25rem;
+  padding: 0.3rem;
   text-transform: uppercase;
   color: #f9f9f9
 }
 
 .section {
-  padding: 60px;
+  padding: 3rem;
 }
 
 .section_title {
   text-transform: uppercase;
-  font-size: 5em;
+  font-size: 2.5rem;
   font-weight: normal;
   margin: 0;
 }
@@ -36,31 +37,31 @@ ul {
 .card {
   display: flex;
   flex-direction: column;
-  padding: 15px 30px;
-  margin-top: 40px;
+  padding: 1rem 2rem;
+  margin-top: 2.5rem;
   box-shadow: 0 6px 6px 0 rgba(0,0,0,0.32);
 }
 
 .card_title {
   color: #f9f9f9;
   text-align: center;
-  margin: 5px;
+  margin: 0.3rem;
   padding: 0;
-  font-size: 3.5em;
+  font-size: 1.75rem;
   font-weight: normal;
 }
 
 .card_img {
   width: 100%;
   height: 100%;
-  margin-top: 5px;
-  margin-bottom: 5px;
+  margin-top: 0.3rem;
+  margin-bottom: 0.3rem;
 }
 
 .card_description {
   color: #f9f9f9;
   margin: 0;
-  font-size: 2.4em;
+  font-size: 1.2rem;
   letter-spacing: 1.5px;
   font-weight: normal;
   line-height: 1.45;
@@ -69,32 +70,39 @@ ul {
 
 .card_link {
   margin: 0;
-  margin-top: 10px;
-  padding: 5px;
+  margin-top: 0.6rem;
+  padding: 0.3rem;
   align-self: flex-end;
-  font-size: 3em;
+  font-size: 1.5rem;
 }
 
 .page_nav_section {
   display: flex;
   position: fixed;
   width: 100%;
-  height: 80px;
+  height: 5rem;
   top: 0;
   flex-direction: row;
-  justify-content: space-between;
-  padding: 0px 20px;
+  justify-content: space-around;
   background-color: #2c3642;
+  opacity: 0;
+  /*box-shadow: 0 3px 5px 0 rgba(44,54,66,0.65);*/
+  box-shadow: 0 3px 5px 0 rgba(0,0,0,0.4);
 }
 
 .page_nav {
   align-self: center;
+  margin-right: 0.6rem;
 }
 
 .page_nav_profile_name {
   color: #68efad;
-  font-size: 3.5em;
+  font-size: 1.75rem;
+  margin-left: 1.25rem;
+  align-self: center;
 }
+
+
 
 
 
@@ -104,7 +112,7 @@ ul {
 
 .about_section {
   background-color: #2c3642;
-  padding-top: 15px;
+  padding-top: 1rem;
 }
 
 
@@ -120,13 +128,12 @@ ul {
   display: flex;
   flex-direction: row;
   justify-content: center;
-  margin-bottom: 30px;
-  opacity: 0;
+  margin-bottom: 2rem;
 }
 
 .nav_btn {
-  margin-left: 5px;
-  margin-right: 5px;
+  margin-left: 0.3rem;
+  margin-right: 0.3rem;
 }
 
 .profile_name {
@@ -136,11 +143,11 @@ ul {
 }
 
 .profile_photo {
-  width: 25em;
-  height: 25em;
+  width: 15rem;
+  height: 15rem;
   align-self: center;
-  margin-top: 2em;
-  margin-bottom: 2em;
+  margin-top: 1rem;
+  margin-bottom: 1rem;
 }
 
 .about_card {
@@ -184,19 +191,19 @@ ul {
 }
 
 .primary_card_title {
-  margin-bottom: 50px;
+  margin-bottom: 3.125rem;
 }
 
 .skill_container {
   display: flex;
   flex-direction: row;
-  margin-bottom: 20px;
+  margin-bottom: 1.25rem;
 }
 
 .skill_title {
   align-self: center;
-  font-size: 2.5em;
-  margin-left: 30px;
+  font-size: 1.25rem;
+  margin-left: 2rem;
   color: #f9f9f9;
 }
 
@@ -205,7 +212,7 @@ ul {
 }
 
 .secondary_card_title {
-  margin-bottom: 50px;
+  margin-bottom: 3.125rem;
 }
 
 
@@ -238,11 +245,11 @@ ul {
 }
 
 .github_contact_image {
-  margin-right: 15px;
+  margin-right: 1rem;
 }
 
 .github_contact_link {
-  font-size: 40px;
+  font-size: 2.5rem;
 }
 
 .linkedin_contact_card {
@@ -250,11 +257,11 @@ ul {
 }
 
 .linkedin_contact_image {
-  margin-left: 10px;
+  margin-left: 0.6rem;
 }
 
 .linkedin_contact_link {
-  font-size: 32px;
+  font-size: 2rem;
 }
 
 .email_contact_card {
@@ -262,5 +269,34 @@ ul {
 }
 
 .email_contact_link {
-  font-size: 33px;
+  font-size: 2rem;
+}
+
+/* ----------- Non-Retina Screens ----------- */
+@media screen
+  and (min-device-width: 1200px)
+  and (max-device-width: 1600px)
+  and (-webkit-min-device-pixel-ratio: 1) {
+
+body {
+  font-family: 'Roboto Mono', monospace;
+  
+}
+
+
+
+}
+
+/* ----------- Retina Screens ----------- */
+@media screen
+  and (min-device-width: 1200px)
+  and (max-device-width: 1600px)
+  and (-webkit-min-device-pixel-ratio: 2)
+  and (min-resolution: 192dpi) {
+
+body {
+  font-family: 'Roboto Mono', monospace;
+}
+
+
 }
