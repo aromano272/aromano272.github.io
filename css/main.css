@@ -146,8 +146,8 @@ ul {
 }
 
 .profile_photo {
-  width: 15rem;
-  height: 15rem;
+  width: 12rem;
+  height: 12rem;
   align-self: center;
   margin-top: 1rem;
   margin-bottom: 1rem;
@@ -291,10 +291,9 @@ ul {
   and (max-device-width: 1600px)
   and (-webkit-min-device-pixel-ratio: 1) {
 
-body {
-  font-family: 'Roboto Mono', monospace;
 
-}
+
+
 
 
 
@@ -307,9 +306,6 @@ body {
   and (-webkit-min-device-pixel-ratio: 2)
   and (min-resolution: 192dpi) {
 
-body {
-  font-family: 'Roboto Mono', monospace;
-}
 
 
 }
