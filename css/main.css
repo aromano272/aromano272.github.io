@@ -230,6 +230,7 @@ ul {
 
 .contact_section {
   background-color: #2c3642;
+  padding-bottom: 4rem;
 }
 
 .contact_title {
@@ -285,17 +286,87 @@ ul {
   font-size: 0.8rem;
 }
 
+
+
+@media screen
+  and (min-device-width: 1200px) {
+
+
+
+
+
+}
+
+
+
 /* ----------- Non-Retina Screens ----------- */
 @media screen
-  and (min-device-width: 1200px)
-  and (max-device-width: 1600px)
-  and (-webkit-min-device-pixel-ratio: 1) {
+  and (min-device-width: 1000px)
+  and (min-width: 800px) {
 
+.cards_container {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+}
 
+.card {
+  width: 70vw;
+  padding: 2.5vw;
+}
 
+.simpleathlete_card_img {
+  width: 65vw;
+  height: 65vw;
+}
 
+.skill_card {
+  width: 35vw;
+  margin-left: 1.3rem;
+  margin-right: 1.3rem;
+}
 
+.contact_cards_container {
+  flex-wrap: wrap;
+}
 
+.contact_card {
+  margin-left: 1.3rem;
+  margin-right: 1.3rem;
+}
+
+}
+
+@media screen
+  and (min-device-width: 1000px)
+  and (min-width: 1400px) {
+
+.cards_container {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+}
+
+.card {
+  width: 70vw;
+  padding: 2.5vw;
+}
+
+.skill_card {
+  width: 25vw;
+  margin-left: 1.3rem;
+  margin-right: 1.3rem;
+}
+
+.contact_cards_container {
+  flex-wrap: wrap;
+}
+
+.contact_card {
+  width: 23.3vw;
+  margin-left: 1.3rem;
+  margin-right: 1.3rem;
+}
 
 }
 
