@@ -69,7 +69,7 @@ ul {
   font-size: 1.2rem;
   letter-spacing: 1.2px;
   font-weight: normal;
-  line-height: 1.30;
+  line-height: 1.45;
 
 }
 
@@ -293,84 +293,120 @@ ul {
   and (min-device-width: 1000px)
   and (min-width: 800px) {
 
-.cards_container {
-  display: flex;
-  flex-direction: row;
-  justify-content: center;
-}
+  .cards_container {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+  }
 
-.card {
-  width: 70vw;
-  padding: 2.5vw;
-}
+  .card {
+    width: 70vw;
+    padding: 2.5vw;
+  }
 
-.simpleathlete_card_img {
-  width: 65vw;
-  height: 65vw;
-}
+  .simpleathlete_card_img {
+    width: 65vw;
+    height: 65vw;
+  }
 
-.skill_card {
-  width: 35vw;
-  margin-left: 1.3rem;
-  margin-right: 1.3rem;
-}
+  .skill_card {
+    width: 35vw;
+    margin-left: 1.3rem;
+    margin-right: 1.3rem;
+  }
 
-.contact_cards_container {
-  flex-wrap: wrap;
-}
+  .contact_cards_container {
+    flex-wrap: wrap;
+  }
 
-.contact_card {
-  margin-left: 1.3rem;
-  margin-right: 1.3rem;
-}
+  .contact_card {
+    margin-left: 1.3rem;
+    margin-right: 1.3rem;
+  }
 
 }
 
 @media screen
   and (min-device-width: 1000px)
+  and (min-width: 1000px) {
+
+  .cards_container {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+  }
+
+  .card {
+    width: 70vw;
+    padding: 2.5vw;
+  }
+
+  .simpleathlete_card_img {
+    width: 65vw;
+    height: 65vw;
+  }
+
+  .skill_card {
+    width: 35vw;
+    margin-left: 1.3rem;
+    margin-right: 1.3rem;
+  }
+
+  .contact_cards_container {
+    flex-wrap: wrap;
+  }
+
+  .contact_card {
+    width: 35vw;
+    margin-left: 1.25rem;
+    margin-right: 1.25rem;
+  }
+
+  .email_contact_card {
+    width: 73vw;
+  }
+
+  .email_contact_link {
+    padding-right: 5vw;
+  }
+
+}
+
+
+@media screen
+  and (min-device-width: 1000px)
   and (min-width: 1400px) {
 
-.cards_container {
-  display: flex;
-  flex-direction: row;
-  justify-content: center;
-}
+  .cards_container {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+  }
 
-.card {
-  width: 52vw;
-  padding: 2.5vw;
-}
+  .card {
+    width: 52vw;
+    padding: 2.5vw;
+  }
 
-.simpleathlete_card_img {
-  width: 47vw;
-  height: 47vw;
-}
+  .simpleathlete_card_img {
+    width: 47vw;
+    height: 47vw;
+  }
 
-.skill_card {
-  width: 25vw;
-  margin-left: 1.3rem;
-  margin-right: 1.3rem;
-}
+  .skill_card {
+    width: 25vw;
+    margin-left: 1.3rem;
+    margin-right: 1.3rem;
+  }
 
-.contact_cards_container {
-  flex-wrap: wrap;
-}
+  .contact_cards_container {
+    flex-wrap: wrap;
+  }
 
-.contact_card {
-  width: 23.3vw;
-  margin-left: 1.3rem;
-  margin-right: 1.3rem;
-}
-
-}
-
-/* ----------- Retina Screens ----------- */
-@media screen
-  and (min-device-width: 1200px)
-  and (max-device-width: 1600px)
-  and (-webkit-min-device-pixel-ratio: 2)
-  and (min-resolution: 192dpi) {
-
-
+  .contact_card {
+    width: 23.3vw;
+    margin-left: 1.3rem;
+    margin-right: 1.3rem;
+  }
 
 }
