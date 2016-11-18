@@ -288,17 +288,6 @@ ul {
 
 
 
-@media screen
-  and (min-device-width: 1200px) {
-
-
-
-
-
-}
-
-
-
 /* ----------- Non-Retina Screens ----------- */
 @media screen
   and (min-device-width: 1000px)
@@ -348,8 +337,13 @@ ul {
 }
 
 .card {
-  width: 70vw;
+  width: 52vw;
   padding: 2.5vw;
+}
+
+.simpleathlete_card_img {
+  width: 47vw;
+  height: 47vw;
 }
 
 .skill_card {
